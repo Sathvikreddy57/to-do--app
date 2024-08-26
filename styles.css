@@ -1,0 +1,119 @@
+/* Basic styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/* Styling for the main container of the to-do list */
+.container {
+    background-color: #ffffff; /* White background */
+    padding: 20px 30px; /* Padding inside the container */
+    border-radius: 0; /* Rectangle shape without rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 400px; /* Fixed width */
+}
+
+/* Styling for the header (title) of the to-do list */
+h1 {
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center alignment of text */
+    font-size: 24px; /* Font size */
+}
+
+/* Layout for the input section, which includes the text input and button */
+.input-section {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    margin-bottom: 20px; /* Space below the input section */
+}
+
+/* Styling for the text input field */
+#new-task {
+    flex: 1; /* Take up available space in the flexbox */
+    padding: 10px; /* Padding inside the text field */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 0; /* Rectangle shape without rounded corners */
+    outline: none; /* No outline when focused */
+    padding-left: 20px; /* Padding to the left for the text */
+}
+
+/* Styling for the Add button */
+#add-task-btn {
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: red; /* Red background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 0; /* Rectangle shape without rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 10px; /* Space to the left of the button */
+    font-size: 16px; /* Font size */
+}
+
+/* Hover effect for the Add button */
+#add-task-btn:hover {
+    background-color: #e05a4f; /* Slightly darker red on hover */
+}
+
+/* Reset the default list styling */
+ul {
+    list-style-type: none; /* No bullets or numbers */
+    padding: 0; /* No padding */
+}
+
+/* Styling for each task item */
+li {
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 10px 15px; /* Padding inside each task */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 0; /* Rectangle shape without rounded corners */
+    margin-bottom: 10px; /* Space below each task */
+    display: flex; /* Flexbox layout for horizontal alignment */
+    align-items: center; /* Vertical center alignment */
+    justify-content: space-between; /* Space between task text and remove button */
+}
+
+/* Styling for completed tasks */
+.completed {
+    text-decoration: line-through; /* Strike-through text */
+    color: #888; /* Grey color for completed tasks */
+}
+
+/* Styling for the checkmark (tick) icon */
+.checkmark {
+    display: inline-block; /* Display inline with other elements */
+    width: 24px; /* Width of the checkmark icon */
+    height: 24px; /* Height of the checkmark icon */
+    border: 2px solid #ccc; /* Grey border */
+    border-radius: 50%; /* Circle shape */
+    margin-right: 15px; /* Space to the right of the checkmark */
+    text-align: center; /* Center text inside the circle */
+    line-height: 20px; /* Line height to align text vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Font size */
+}
+
+/* Styling for the checkmark when the task is completed */
+.completed .checkmark {
+    background-color: green; /* Green background for completed tasks */
+    color: white; /* White checkmark */
+    border: none; /* No border */
+}
+
+/* Styling for the remove button */
+.remove-btn {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    color: #888; /* Grey color */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    outline: none; /* No outline */
+}
+
+/* Hover effect for the remove button */
+.remove-btn:hover {
+    color: #e05a4f; /* Slightly darker red on hover */
+}
